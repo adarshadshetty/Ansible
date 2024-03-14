@@ -1,0 +1,19 @@
+---
+ - name: ec2 provisioning using Ansible
+   hosts: local
+   connection: local
+   gather_facts: False
+
+ - hosts: local
+   gather_facts: False
+   connection: local
+   vars:
+     - region: 'us-east-1'
+     - ec2_id: 'i-0aa281fc5e1d46041'
+   tasks:
+     - name: Terminate instances
+       ec2_instance:
+         state='absent'
+         instance_ids='{{ ec2_id }}'
+         region='{{ region }}'
+~                                  
