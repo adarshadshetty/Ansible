@@ -1,0 +1,19 @@
+- name: EC2 creation
+  hosts: localhost
+  tasks:
+   - ec2_instance:
+     aws_access_key: AKIAYS2NUQZDIXHRUPAL
+     aws_secrete_key: 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
+     region: us-east-1
+     instance_type: t2.micro
+     image_id: ami-07d9b9ddc6cd8dd30
+     count: 1
+     wait: yes
+     tags:
+       name: demo
+     vpc_subnet_id: subnet-07c9e2dad29eb618a
+     network:
+       assing_public_ip: true
+       key_name: cicdproject
+       security_group: launch-wizard-8
+
