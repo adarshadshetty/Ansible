@@ -36,14 +36,14 @@ ansible all --key-file ~/.ssh/ansible -i inventory -m ping
 
 ### Advanced Topics & Integration with other Technologies
 
-> Dynamic Inventory for EC2
-> Execute Ansible Playbook with terraform
-> Ansible and Docker
-> Ansible and K8s
-> Ansible and Jenkins
-> Roles in Ansible 
+> Dynamic Inventory for EC2 \
+> Execute Ansible Playbook with terraform \
+> Ansible and Docker \
+> Ansible and K8s \
+> Ansible and Jenkins \
+> Roles in Ansible \
 
-> Project : Deploy Nodejs App
-> Project : Deploy Nexus
+> Project : Deploy Nodejs App \
+> Project : Deploy Nexus \
 
 
